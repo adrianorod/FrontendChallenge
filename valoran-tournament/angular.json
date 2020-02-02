@@ -120,6 +120,12 @@
           }
         }
       }
-    }},
-  "defaultProject": "valoran-tournament"
+    }
+  },
+  "defaultProject": "valoran-tournament",
+  "schematics": {
+    "@schematics/angular:component": {
+      "styleext": "scss"
+    }
+  }
 }
