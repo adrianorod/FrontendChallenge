@@ -1,0 +1,22 @@
+.tournament {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+
+    .player {
+        background-image: linear-gradient(#d0d0d0, #a0a0a0);
+        border-radius: 25px;
+        font-weight: 600;
+        margin: 5px;
+        padding: 10px 20px;
+        text-shadow: 1px 1px 0 #fff;
+        text-transform: uppercase;
+    }
+}
+
+.winner {
+    color: red;
+    font-size: 18px;
+    font-weight: 600;
+    text-shadow: 2px 2px 0 #fff;
+}

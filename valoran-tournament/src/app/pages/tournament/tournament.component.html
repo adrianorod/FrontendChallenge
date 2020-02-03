@@ -1,1 +1,12 @@
-<p>tournament works!</p>
+<h1 class="title">Tournament</h1>
+
+<p class="winner" *ngIf="tournament.length === 1">This is the winner!</p>
+
+<div class="tournament">
+    <div class="player" *ngFor="let item of tournament">
+        {{item}}
+    </div>
+</div>
+
+<button class="btn" *ngIf="tournament.length > 1" (click)="startTournament()">Start</button>
+<button class="btn" *ngIf="tournament.length === 1" (click)="reset()">Back to home</button>
