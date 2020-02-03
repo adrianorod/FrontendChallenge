@@ -1,0 +1,33 @@
+
+.btn {
+    background-image: linear-gradient(#ffbb3e, #e9ffb2);
+    border-radius: 25px;
+    border: 0;
+    color: #672b08;
+    cursor: pointer;
+    font-family: 'Times New Roman';
+    font-size: 28px;
+    font-weight: 600;
+    margin: 5px;
+    padding: 7px 25px;
+    text-shadow: 2px 2px 0 #fff;
+    text-transform: uppercase;
+
+    &:hover {
+        background-image: linear-gradient(#e8aa36, #c8da9b);
+    }
+
+    &:disabled {
+        background-image: linear-gradient(#d0d0d0, #dadada);
+        opacity: .7;
+    }
+}
+
+.input {
+    border-radius: 25px;
+    border: 0;
+    font-family: 'Times New Roman';
+    margin: 5px;
+    padding: 10px 20px;
+    text-transform: uppercase;
+}
