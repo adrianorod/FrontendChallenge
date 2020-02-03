@@ -1,0 +1,16 @@
+<h1 class="title">Register the players for the tournament</h1>
+
+<form class="form" [formGroup]="tournamentForm">
+    <input class="input" type="text" formControlName="player1" placeholder="Player 1" required>
+    <input class="input" type="text" formControlName="player2" placeholder="Player 2" required>
+    <input class="input" type="text" formControlName="player3" placeholder="Player 3" required>
+    <input class="input" type="text" formControlName="player4" placeholder="Player 4" required>
+    <button 
+        class="btn" 
+        routerLink="/create-tournament" 
+        [disabled]="!tournamentForm.valid"
+        (click)="onClickButton()"
+    >
+        Create
+    </button>
+</form>
